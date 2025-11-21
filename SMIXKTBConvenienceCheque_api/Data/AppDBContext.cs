@@ -356,6 +356,11 @@ namespace SMIXKTBConvenienceCheque.Data
                     .HasConstraintName("FK_ChequeDetail_BatchControl");
             });
 
+            modelBuilder.Entity<TmpImportClaim>(entity =>
+            {
+                entity.Property(e => e.TypeId).HasComment("1. ค่ารักษา\r\n2. ชดเฉย");
+            });
+
             OnModelCreatingGeneratedProcedures(modelBuilder);
             OnModelCreatingPartial(modelBuilder);
         }

@@ -13,7 +13,7 @@ namespace SMIXKTBConvenienceCheque.Services.Report
         private readonly IMapper _mapper;
         private readonly Serilog.ILogger _logger;
         private const string _serviceName = nameof(ReportServices);
-        private readonly List<string> _cheque = new() { "FileNo", "BatchNo", "ClaimNo", "Prefix", "เลขที่อ้างอิงเอกสาร", "ชื่อโรงเรียน", "วันทีพิมพ์บนหน้าเช็ค", "หมายเลขเช็ค", "ชื่อผู้รับเช็ค", "จำนวนเงินจ่ายสุทธิ", "สถานะของเช็ค", "รายละเอียดสถานะของเช็ค", "วันที่สถานะเช็คเปลี่ยนแปลง", "วันทีพิมพ์เช็ค" };
+        private readonly List<string> _cheque = new() { "FileNo", "BatchNo", "ClaimNo", "Prefix", "เลขที่อ้างอิงเอกสาร", "ชื่อโรงเรียน", "วันทีพิมพ์บนหน้าเช็ค", "หมายเลขเช็ค", "ชื่อผู้รับเช็ค", "จำนวนเงินจ่ายสุทธิ", "สถานะของเช็ค", "รายละเอียดสถานะของเช็ค", "วันที่สถานะเช็คเปลี่ยนแปลง", "วันทีพิมพ์เช็ค", "เลขที่กรมธรรม์", "วันที่เกิดเหตุ", "Due date", "จำนวนวันที่เกิน Due date" };
 
         public ReportServices(AppDBContext dBContext, IMapper mapper)
         {

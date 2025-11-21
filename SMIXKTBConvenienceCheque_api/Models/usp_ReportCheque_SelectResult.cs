@@ -22,5 +22,9 @@ namespace SMIXKTBConvenienceCheque.Models
         public string ChequeStatusDetail { get; set; }
         public DateTime? TransactionDate { get; set; }
         public DateTime? OutwardDate { get; set; }
+        public string PolicyNo { get; set; }
+        public DateTime? DateHappen { get; set; }
+        public DateTime? DueDate { get; set; }
+        public int? OverDue { get; set; }
     }
 }

@@ -64,5 +64,11 @@ namespace SMIXKTBConvenienceCheque.Models
         [StringLength(20)]
         [Unicode(false)]
         public string SchoolRunning { get; set; }
+        public int? ChequeRound { get; set; }
+        /// <summary>
+        /// 1. ค่ารักษา
+        /// 2. ชดเฉย
+        /// </summary>
+        public int? TypeId { get; set; }
     }
 }
